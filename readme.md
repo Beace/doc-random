@@ -14,7 +14,9 @@
 > 在计算伪随机数时假如使用的开始值不变的话，那么伪随机数的数序也不变。伪随机数的随机性可以用它的统计特性来衡量，其主要特征是每个数出现的可能性和它出现时与数序中其它数的关系。伪随机数的优点是它的计算比较简单，而且只使用少数数值很难推算出计算它的算法。一般人们使用一个假的随机数，比如电脑上的时间作为计算伪随机数的开始值。
 >——[维基百科-伪随机性](https://zh.wikipedia.org/wiki/%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%80%A7)
 
-![Math.random()](./screenshot/math.random.png)
+
+<img src="./screenshot/math.random.png" width="100%" />
+
 
 假设选取区间足够大，随机性就比较高，可靠性也比较强。就可以**忽略边界值**的问题。
 
@@ -26,7 +28,7 @@
 
 下图是选取了`[0,5)`范围内的随机浮点数。
 
-![Math.random() * n](./screenshot/math.random*n.png)
+<img src="./screenshot/math.random*n.png" width="100%" />
 
 - `[m, n]`随机数选取
 
@@ -38,7 +40,8 @@ function getM2NRandom(m, n) {
   return Math.random() * (n - m) + m;
 }
 ```
-![Math.random() * (m -n) + m](./screenshot/math.random.mn.png)
+
+<img src="./screenshot/math.random.mn.png" width="100%" />
 
 ## 取整数
 
@@ -77,7 +80,7 @@ function getIntRandom(n) {
 }
 getIntRandom(10);
 ```
-![math.random.int](./screenshot/math.random.int.png)
+<img src="./screenshot/math.random.int.png" width="100%" />
 
 - `[m, n]`随机取整
 
@@ -88,7 +91,7 @@ function getIntM2NRandom(m , n) {
 getIntM2NRandom(2, 5);
 ```
 
-![math.random.int.mn](./screenshot/math.random.int.mn.png)
+<img src="./screenshot/math.random.int.mn.png" width="100%" />
 
 这样的随机取整方式，也解决了取不到n的问题。
 
